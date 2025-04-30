@@ -2,7 +2,7 @@ services:
   vikunja:
     image: vikunja/vikunja
     environment:
-      VIKUNJA_SERVICE_PUBLICURL: http://localhost
+      VIKUNJA_SERVICE_PUBLICURL: http://(nombre del dominio de la rasberry)
       VIKUNJA_DATABASE_HOST: db
       VIKUNJA_DATABASE_PASSWORD: changeme
       VIKUNJA_DATABASE_TYPE: mysql
