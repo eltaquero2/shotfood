@@ -32,3 +32,16 @@ services:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost -u $$MYSQL_USER --password=$$MYSQL_PASSWORD"]
       interval: 2s
       start_period: 30s
+  openjdk:
+    image: openjdk:17
+    container_name: openjdk
+    command: sleep infinity
+    restart: unless-stopped
+  web-html:
+    image: nginx:alpine
+    container_name: html-server
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+    restart: unless-stopped
