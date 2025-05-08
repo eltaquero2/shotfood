@@ -27,6 +27,8 @@
 ### -Drawio: creacion del modelo UML y de la entidad E-R
 ### -HeidiSQL: creacion de la base de datos
 ### -VisualStudioCode: creacion del HTML de nuestra app (el triptico)
+### -Canva: creacion de la portada de la memoria, el organigrama y la presentacion de ingles
+### -Word: creacion de la memoria
 
 # Como funciona nuestra aplicación?
 
