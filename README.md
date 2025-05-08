@@ -2,7 +2,7 @@
 
 
 
-## Creado por: Andrey, Ernesto, Jorge, Hector, Alejandro
+## Creado por: Andrey, Ernesto, Jorge, Héctor, Alejandro
 
 
 
