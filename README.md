@@ -28,6 +28,21 @@
 ### -HeidiSQL: creacion de la base de datos
 ### -VisualStudioCode: creacion del HTML de nuestra app (el triptico)
 
+# Como funciona nuestra aplicación?
+
+### Al abrirla tenemos nuestro Inicio de Sesion, en donde si no posees una cuenta puedes pulsar en "Crear Cuenta" para registrarte, una vez creada, seras redirijido al login y podras entrar.
+
+### Al entrar a la aplicacion, seras recibido por tres botones principales y uno que tendras presente en cualquier pestaña de la aplicacion, estos tres botones son "Dietas", "Registro" y "Recetas", ademas de esto, arriba a la derecha podras entrar a tu perfil donde puedes ver tu contraseña, la seccion de ayuda, tu cuenta, ajustes, cerrar sesion de la cuenta, etc... 
+
+### En nutrientes podras ver las cuatro nutrientes principales y usted podra editar para cambiarlos a otros o cambiar las metas (llegar a 40g de proteina, llegar a 50g de proteina...), el proposito de esta seccion es para que establezcas metas y tengas una manera viable y facil de saber si las estas cumpliendo, mostrandote el progreso
+
+### En recetas, tendras presente un blog, otros usuarios como tu pueden publicar las recetas que hayais hecho, con su titulo y breve descripcion...
+
+### En dietas puedes establecer una dieta la cual quieras seguir y esta seccion te mostrara mediante menus desplegables en los que dice la hora y lo que toca/antes de lo que toca (por ejemplo, desayuno Pre Entreno 7:00 AM) y te dira que debes comer y que cantidad de cada.
+
+
+
+
 
 
  1. app
