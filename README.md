@@ -10,7 +10,7 @@
 
 ### En el apartado de Dieta Activa podrás ver la dieta que has decidido seguir y te mostrará, con una interfaz simple pero directa y con imágenes, lo que debes comer y a qué hora, además de obviamente incluir la cantidad del alimento en cuestión.
 
-# ¿Cómo lo estamos haciendo?
+# ¿Que programas hemos usado?
 
 ### - Kanban: inspiración para la tabla de progreso real.
 ### - Figma: creación del mockup del tríptico y de la aplicación.
@@ -20,6 +20,21 @@
 ### - Visual Studio Code: creación del HTML de nuestra app (el tríptico).
 ### - Canva: creación de la portada de la memoria, el organigrama y la presentación de inglés.
 ### - Word: creación de la memoria.
+
+
+# ¿Cómo la hicimos?
+
+### Hemos usado IntelliJ para programar la aplicación, en esta seccion hicimos la base, donde tenemos la informacion en bruto y los metodos para redirijir a otras secciones de la aplicación, usando Scenebuilder, les dimos color, imagenes, aspecto fisico y botones funcionales, haciendo que parezca una APP.
+
+### Para la creacion de usuarios, tenemos una Base de datos en HeidiSQL creada donde estos son almacenados en su tabla y asi se mantienen, estando disponibles para iniciar sesion tras la creación.
+
+### Con Canva, nos pusimos a crear la presentación en ingles donde presentamos visualmente que aplicaciones hemos utilizado en este proyecto con una breve descripcion en ingles, ademas de esto, lo utilizamos para crear el organigrama, en el que nos distribuimos la tarea con una breve descripcion del porque hicimos esto.
+
+### Con Word, se mantiene un diario en el que apuntamos que tarea hicimos cada miembro del grupo en el dia, ademas de adjuntar una foto de como se ve nuestro tablon.
+
+### Antes de crear la aplicación, utilizamos figma para tener un boceto o diseño en bruto, en esta aplicacion usamos elementos y plantillas para ir creando la aplicación, una vez le dimos el aprobado, lo utilizamos de inspiracion para trabajar en el scenebuilder.
+
+### Para la creación de la pagina web, usamos visual studio code con el lenguaje HTML y CSS
 
 # ¿Cómo funciona nuestra aplicación?
 
