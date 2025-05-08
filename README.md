@@ -2,7 +2,7 @@
 
 ## Creado por: Andrey, Ernesto, Jorge, Héctor, Alejandro
 
-### *Shotfood* es una aplicación la cual proporciona dietas al usuario en base a sus búsquedas o lo que el usuario quiera. Este sistema funciona mediante un blog en el que puedes buscar recetas o publicarlas, y estas recetas te saldrán en recomendación en base a la dieta que quieras hacer, estableciéndola como *Dieta Activa* y a los *Objetivos* que tengas.
+## *Shotfood* es una aplicación la cual proporciona dietas al usuario en base a sus búsquedas o lo que el usuario quiera. Este sistema funciona mediante un blog en el que puedes buscar recetas o publicarlas, y estas recetas te saldrán en recomendación en base a la dieta que quieras hacer, estableciéndola como *Dieta Activa* y a los *Objetivos* que tengas.
 
 
 # ¿Que programas hemos usado?
