@@ -4,11 +4,6 @@
 
 ### *Shotfood* es una aplicación la cual proporciona dietas al usuario en base a sus búsquedas o lo que el usuario quiera. Este sistema funciona mediante un blog en el que puedes buscar recetas o publicarlas, y estas recetas te saldrán en recomendación en base a la dieta que quieras hacer, estableciéndola como *Dieta Activa* y a los *Objetivos* que tengas.
 
-### Los objetivos son un apartado distinto en el que el usuario decide añadir objetivos de cuántos nutrientes debe comer y en qué base (diaria, semanal, etc.). Un ejemplo sería querer alcanzar las 55 g de proteína. El usuario registrará qué ha comido mediante publicarlo, y la app registrará los datos, informándole de cuánto le queda para cumplir con sus metas.
-
-### La app viene integrada con un apartado de edición de usuario, para poder ponerte tu propia foto de perfil, nombre y editar tu información personal.
-
-### En el apartado de Dieta Activa podrás ver la dieta que has decidido seguir y te mostrará, con una interfaz simple pero directa y con imágenes, lo que debes comer y a qué hora, además de obviamente incluir la cantidad del alimento en cuestión.
 
 # ¿Que programas hemos usado?
 
