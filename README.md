@@ -15,6 +15,7 @@
 ### - Visual Studio Code: creación del HTML de nuestra app (el tríptico).
 ### - Canva: creación de la portada de la memoria, el organigrama y la presentación de inglés.
 ### - Word: creación de la memoria.
+### - Raspberry: Alojamiento de la web, del servidor web, de la base de datos, de docker....
 
 
 # ¿Cómo la hicimos?
