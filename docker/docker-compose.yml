@@ -1,47 +1,34 @@
 services:
-  vikunja:
-    image: vikunja/vikunja
-    environment:
-      VIKUNJA_SERVICE_PUBLICURL: http://(nombre del dominio de la rasberry)
-      VIKUNJA_DATABASE_HOST: db
-      VIKUNJA_DATABASE_PASSWORD: changeme
-      VIKUNJA_DATABASE_TYPE: mysql
-      VIKUNJA_DATABASE_USER: vikunja
-      VIKUNJA_DATABASE_DATABASE: vikunja
-      VIKUNJA_SERVICE_JWTSECRET: 1234
-    ports:
-      - 3456:3456
-    volumes:
-      - ./files:/app/vikunja/files
-    depends_on:
-      db:
-        condition: service_healthy
-    restart: unless-stopped
   db:
     image: mariadb:10
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     environment:
       MYSQL_ROOT_PASSWORD: supersecret
-      MYSQL_USER: vikunja
-      MYSQL_PASSWORD: changeme
-      MYSQL_DATABASE: vikunja
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: changepass
+      MYSQL_DATABASE: appdb
     volumes:
       - ./db:/var/lib/mysql
+    ports:
+      - "3399:3306" 
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u $$MYSQL_USER --password=$$MYSQL_PASSWORD"]
-      interval: 2s
-      start_period: 30s
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
   openjdk:
     image: openjdk:17
     container_name: openjdk
     command: sleep infinity
     restart: unless-stopped
+
   web-html:
     image: nginx:alpine
     container_name: html-server
     volumes:
       - ./html:/usr/share/nginx/html:ro
     ports:
-      - "8080:80"
+      - "8181:80"  
     restart: unless-stopped
