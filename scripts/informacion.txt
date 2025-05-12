@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Supervisión del uso de la CPU y memoria
+echo "======================================="
+echo "Uso de CPU y Memoria:"
+echo "======================================="
+top -bn1 | grep "Cpu(s)"
+free -h
+echo "======================================="

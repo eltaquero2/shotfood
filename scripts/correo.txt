@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# === CONFIGURACIÓN (EDITA ESTO) ===
+DB_NAME="shotfood"
+DB_USER="root"
+DB_PASS="usuario"
+DOCKER_CONTAINER="mysql-container"
+HOSTNAME=$(hostname)
+BACKUP_DIR="/tmp/copias"
+
+# Verifica si msmtp está instalado
+command -v msmtp >/dev/null 2>&1 || { echo "msmtp no está instalado. Abortando."; exit 1; }
+
+# === SOLICITAR CORREO DESTINATARIO ===
+read -p "Introduce el correo al que se enviarán los reportes: " EMAIL
+EMAIL=$(echo "$EMAIL" | xargs)  # Elimina espacios extra
+
+if [[ -z "$EMAIL" ]]; then
+    echo "No se introdujo un correo. Abortando."
+    exit 1
+fi
+
+if ! echo "$EMAIL" | grep -Pq "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"; then
+    echo "Correo inválido. Abortando."
+    exit 1
+fi
+
+echo "Correo proporcionado: $EMAIL"
+echo "Directorio de backups: $BACKUP_DIR"
+
+# === 1. COPIA DE SEGURIDAD DE BASE DE DATOS ===
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BACKUP_FILE="$BACKUP_DIR/${DB_NAME}_backup_$TIMESTAMP.sql"
+
+mkdir -p "$BACKUP_DIR"
+if [ ! -d "$BACKUP_DIR" ]; then
+    echo "No se pudo crear el directorio de backups '$BACKUP_DIR'. Abortando."
+    exit 1
+fi
+
+docker exec "$DOCKER_CONTAINER" mysqldump -u"$DB_USER" -p"$DB_PASS" "$DB_NAME" > "$BACKUP_FILE"
+if [ $? -ne 0 ] || [ ! -s "$BACKUP_FILE" ]; then
+    echo -e "Subject: Error en Backup en $HOSTNAME\n\nHubo un error al realizar el backup de la base de datos '$DB_NAME'." | msmtp -C "$HOME/.msmtprc" "$EMAIL"
+    exit 1
+fi
+
+# === 2. USO DEL DISCO ===
+USO_DISCO=$(df / | awk 'NR==2 { print $5 }' | sed 's/%//')
+MAX_DISCO=$(df -h / | awk 'NR==2 { print $2 }')
+USADO_DISCO=$(df -h / | awk 'NR==2 { print $3 }')
+
+DISK_MESSAGE="Uso de disco en $HOSTNAME:\nUsado: $USADO_DISCO / $MAX_DISCO ($USO_DISCO%)"
+
+if [ "$USO_DISCO" -gt 90 ]; then
+    echo -e "Subject: Espacio en disco crítico en $HOSTNAME\n\nATENCIÓN: El uso del disco ha superado el 90%%.\n$DISK_MESSAGE" | msmtp -C "$HOME/.msmtprc" "$EMAIL"
+else
+    echo -e "Subject: Reporte de uso de disco en $HOSTNAME\n\nEstado actual del uso de disco:\n$DISK_MESSAGE" | msmtp -C "$HOME/.msmtprc" "$EMAIL"
+fi
+
+# === 3. CONFIRMACIÓN DE BACKUP ===
+echo -e "Subject: Backup exitoso en $HOSTNAME\n\nBackup completado para la base de datos '$DB_NAME'.\nArchivo: $BACKUP_FILE\n\n$DISK_MESSAGE" | msmtp -C "$HOME/.msmtprc" "$EMAIL"
