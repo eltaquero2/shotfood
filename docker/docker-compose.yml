@@ -1,6 +1,6 @@
 services:
   db:
-    image: mariadb:10
+    image: mysql:8.0
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     environment:
       MYSQL_ROOT_PASSWORD: supersecret
@@ -10,7 +10,7 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     ports:
-      - "3399:3306" 
+      - "3399:3306"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
@@ -30,5 +30,5 @@ services:
     volumes:
       - ./html:/usr/share/nginx/html:ro
     ports:
-      - "8181:80"  
+      - "8181:80"
     restart: unless-stopped
