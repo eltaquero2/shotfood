@@ -86,7 +86,7 @@ Los creadores del proyecto **ShotFood** son:
 ## 🛒 ¿Cómo empezar a usar ShotFood?
 
 1. **Web**  
-   Accede a nuestra plataforma para obtener más información sobre la app, ver capturas de pantalla, y descargar el ejecutable. También encontrarás tutoriales, documentación y un formulario de contacto para soporte.
+   Accede a nuestra plataforma para obtener más información sobre la app, ver capturas de pantalla.... También encontrarás tutoriales, documentación y un formulario de contacto para soporte.
 
 2. **Aplicación**  
    Descarga e instala la app. Inicia sesión y empieza a configurar tus nutrientes, buscar recetas y seguir tu dieta personalizada.
