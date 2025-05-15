@@ -1,48 +1,97 @@
-# Proyecto Shotfood
+[![24/7 Support](https://img.shields.io/badge/24%2F7%20Support-✔️-34495E)](#)  
 
-## Creado por: Andrey, Ernesto, Jorge, Héctor, Alejandro
+# ShotFood — Tu Compañero de Nutrición Personalizada 🥗📱
 
-## *Shotfood* es una aplicación la cual proporciona dietas al usuario en base a sus búsquedas o lo que el usuario quiera. Este sistema funciona mediante un blog en el que puedes buscar recetas o publicarlas, y estas recetas te saldrán en recomendación en base a la dieta que quieras hacer, estableciéndola como *Dieta Activa* y a los *Objetivos* que tengas.
+**Aplicación inteligente que te ayuda a llevar un seguimiento nutricional completo, descubrir recetas saludables y mantener dietas personalizadas.**
 
+---
 
-# ¿Que programas hemos usado?
+## Nuestra Misión
 
-### - Kanban: inspiración para la tabla de progreso real.
-### - Figma: creación del mockup del tríptico y de la aplicación.
-### - IntelliJ: creación del programa utilizando el lenguaje JavaFX y el programa SceneBuilder.
-### - Drawio: creación del modelo UML y de la entidad E-R.
-### - HeidiSQL: creación de la base de datos.
-### - Visual Studio Code: creación del HTML de nuestra app (el tríptico).
-### - Canva: creación de la portada de la memoria, el organigrama y la presentación de inglés.
-### - Word: creación de la memoria.
-### - Raspberry: Alojamiento de la web, del servidor web, de la base de datos, de docker....
+Mejorar la salud y bienestar de las personas mediante una aplicación fácil de usar que combina control nutricional, recetas adaptadas y planificación de dietas, todo personalizado según tus objetivos y necesidades.
 
+---
 
-# ¿Cómo la hicimos?
+## ¿Qué Puedes Hacer con ShotFood?
 
-### Hemos usado IntelliJ para programar la aplicación, en esta seccion hicimos la base, donde tenemos la informacion en bruto y los metodos para redirijir a otras secciones de la aplicación, usando Scenebuilder, les dimos color, imagenes, aspecto fisico y botones funcionales, haciendo que parezca una APP.
+### 🧪 Nutrientes
+- Establece y configura los nutrientes que quieres seguir, como:
+  - **Proteínas**
+  - **Carbohidratos**
+  - **Grasas**
+  - **Vitaminas**  
+- Visualiza tu progreso diario mediante indicadores intuitivos.
+- Recibe recomendaciones basadas en tus niveles actuales.
 
-### Para la creacion de usuarios, tenemos una Base de datos en HeidiSQL creada donde estos son almacenados en su tabla y asi se mantienen, estando disponibles para iniciar sesion tras la creación.
+### 🍽️ Recetas
+- Explora recetas saludables clasificadas por tipo de comida, nivel de dificultad o ingredientes.
+- Filtra recetas según tus objetivos nutricionales.
+- Visualiza los nutrientes de cada receta para integrarlas fácilmente a tu dieta.
 
-### Con Canva, nos pusimos a crear la presentación en ingles donde presentamos visualmente que aplicaciones hemos utilizado en este proyecto con una breve descripcion en ingles, ademas de esto, lo utilizamos para crear el organigrama, en el que nos distribuimos la tarea con una breve descripcion del porque hicimos esto.
+### 📋 Dietas
+- Consulta tu dieta personalizada según tus necesidades nutricionales.
+- Recibe menús diarios equilibrados.
+- Realiza seguimiento de tu adherencia a la dieta.
 
-### Con Word, se mantiene un diario en el que apuntamos que tarea hicimos cada miembro del grupo en el dia, ademas de adjuntar una foto de como se ve nuestro tablon.
+---
 
-### Antes de crear la aplicación, utilizamos figma para tener un boceto o diseño en bruto, en esta aplicacion usamos elementos y plantillas para ir creando la aplicación, una vez le dimos el aprobado, lo utilizamos de inspiracion para trabajar en el scenebuilder.
+## Características Destacadas
 
-### Para la creación de la pagina web, usamos visual studio code con el lenguaje HTML y CSS
+- **Interfaz clara e intuitiva**  
+- **Recomendaciones automáticas** basadas en tus datos.
+- **Sistema de seguimiento diario** por nutrientes.
+- **Catálogo de recetas** dinámico y filtrable.
+- **Gestión de dietas** a medida con recordatorios y sugerencias.
 
-# ¿Cómo funciona nuestra aplicación?
+---
 
-### Al abrirla tenemos nuestro Inicio de Sesión, en donde si no posees una cuenta puedes pulsar en "Crear Cuenta" para registrarte. Una vez creada, serás redirigido al login y podrás entrar.
+## 🚀 Tecnología Utilizada
 
-### Al entrar a la aplicación, serás recibido por tres botones principales y uno que tendrás presente en cualquier pestaña de la aplicación. Estos tres botones son "Dietas", "Registro" y "Recetas". Además de esto, arriba a la derecha podrás entrar a tu perfil donde puedes ver tu contraseña, la sección de ayuda, tu cuenta, ajustes, cerrar sesión de la cuenta, etc.
+- **Java**  
+  Lenguaje principal para el desarrollo de la lógica de la aplicación. ☕  
+- **JavaFX**  
+  Usado para crear una interfaz gráfica moderna e interactiva. 🎨  
+- **MySQL**  
+  Base de datos para almacenar usuarios, recetas, nutrientes y dietas. 🗄️  
+- **Docker**  
+  Empleado para contenerizar la base de datos y facilitar el despliegue. 🐳  
+- **Git**  
+  Control de versiones que permite trabajo colaborativo y organizado. 🛠️  
+- **Raspberry Pi** 
+  Utilizado para alojar todo el proyecto, la web, etc... 🍓
+- **HTML** 
+  Lenguaje en el que se crea la pagina web 🍓
 
-### En Nutrientes podrás ver los cuatro nutrientes principales y podrás editarlos para cambiarlos por otros o cambiar las metas (llegar a 40 g de proteína, llegar a 50 g de proteína...). El propósito de esta sección es que establezcas metas y tengas una manera viable y fácil de saber si las estás cumpliendo, mostrándote el progreso.
+---
 
-### En Recetas, tendrás presente un blog. Otros usuarios como tú pueden publicar las recetas que hayan hecho, con su título y breve descripción.
+## 📄 Licencia
 
-### En Dietas puedes establecer una dieta que quieras seguir, y esta sección te mostrará mediante menús desplegables en los que dice la hora y lo que toca/antes de lo que toca (por ejemplo, Desayuno Pre-Entreno 7:00 AM) y te dirá qué debes comer y qué cantidad de cada alimento.
+**Licencia:** GPL (General Public License) 🔓  
+Proyecto de código abierto y libre para su uso educativo y sin fines comerciales.
 
+---
 
+## 👨‍💻 Equipo de Desarrollo
 
+Los creadores del proyecto **ShotFood** son:
+
+- **Andrey Prysich**  
+- **Alejandro Oller**  
+- **Jorge Castera**  
+- **Ernesto Martínez**  
+- **Héctor Boluda**
+
+---
+
+## 🛒 ¿Cómo empezar a usar ShotFood?
+
+1. **Web**  
+   Accede a nuestra plataforma para obtener más información sobre la app, ver capturas de pantalla, y descargar el ejecutable. También encontrarás tutoriales, documentación y un formulario de contacto para soporte.
+
+2. **Aplicación**  
+   Descarga e instala la app. Inicia sesión y empieza a configurar tus nutrientes, buscar recetas y seguir tu dieta personalizada.
+
+---
+
+¿Listo para llevar una vida más saludable con **ShotFood**?  
+¡Empieza hoy y alcanza tus objetivos nutricionales! 💪🥑
