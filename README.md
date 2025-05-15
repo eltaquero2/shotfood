@@ -1,5 +1,4 @@
-[![24/7 Support](https://img.shields.io/badge/24%2F7%20Support-✔️-34495E)](#)  
-
+ 
 # ShotFood — Tu Compañero de Nutrición Personalizada 🥗📱
 
 **Aplicación inteligente que te ayuda a llevar un seguimiento nutricional completo, descubrir recetas saludables y mantener dietas personalizadas.**
