@@ -74,7 +74,7 @@ Proyecto de código abierto y libre para su uso educativo y sin fines comerciale
 
 Los creadores del proyecto **ShotFood** son:
 
-- **Andrey Prysich**  
+- **Andrey Prisych**  
 - **Alejandro Oller**  
 - **Jorge Castera**  
 - **Ernesto Martínez**  
