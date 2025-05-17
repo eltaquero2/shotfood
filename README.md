@@ -50,10 +50,9 @@ Mejorar la salud y bienestar de las personas mediante una aplicación fácil de 
 ## Características Destacadas
 
 - **Interfaz clara e intuitiva**  
-- **Recomendaciones automáticas** basadas en tus datos.
 - **Sistema de seguimiento diario** por nutrientes.
 - **Catálogo de recetas** dinámico y filtrable.
-- **Gestión de dietas** a medida con recordatorios y sugerencias.
+- **Gestión de dietas** con comidas segun dieta o dia.
 
 ---
 
