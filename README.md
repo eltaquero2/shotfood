@@ -5,6 +5,19 @@
 
 ---
 
+
+## 👨‍💻 Equipo de Desarrollo
+
+Los creadores del proyecto **ShotFood** son:
+
+- **Andrey Prisych**  
+- **Alejandro Oller**  
+- **Jorge Castera**  
+- **Ernesto Martínez**  
+- **Héctor Boluda**
+
+---
+
 ## Nuestra Misión
 
 Mejorar la salud y bienestar de las personas mediante una aplicación fácil de usar que combina control nutricional, recetas adaptadas y planificación de dietas, todo personalizado según tus objetivos y necesidades.
@@ -67,18 +80,6 @@ Mejorar la salud y bienestar de las personas mediante una aplicación fácil de 
 
 **Licencia:** GPL (General Public License) 🔓  
 Proyecto de código abierto y libre para su uso educativo y sin fines comerciales.
-
----
-
-## 👨‍💻 Equipo de Desarrollo
-
-Los creadores del proyecto **ShotFood** son:
-
-- **Andrey Prisych**  
-- **Alejandro Oller**  
-- **Jorge Castera**  
-- **Ernesto Martínez**  
-- **Héctor Boluda**
 
 ---
 
