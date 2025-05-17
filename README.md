@@ -59,7 +59,7 @@ Mejorar la salud y bienestar de las personas mediante una aplicación fácil de 
 - **Raspberry Pi** 
   Utilizado para alojar todo el proyecto, la web, etc... 🍓
 - **HTML** 
-  Lenguaje en el que se crea la pagina web 🍓
+  Lenguaje en el que se crea la pagina web 📚
 
 ---
 
