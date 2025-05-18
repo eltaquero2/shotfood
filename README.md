@@ -75,13 +75,6 @@ Mejorar la salud y bienestar de las personas mediante una aplicación fácil de 
 
 ---
 
-## 📄 Licencia
-
-**Licencia:** GPL (General Public License) 🔓  
-Proyecto de código abierto y libre para su uso educativo y sin fines comerciales.
-
----
-
 ## 🛒 ¿Cómo empezar a usar ShotFood?
 
 1. **Web**  
